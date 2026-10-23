@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&family=Orbitron:wght@400..900&display=swap');
+body{font-family: "Orbitron", sans-serif; color: #333;}
+
+.header{width: 400px; height: 100vh; position: fixed; left: 0; top: 0; z-index: 10; background: linear-gradient(45deg,#a8c879,#cbdeaf); color: #fff; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+
+.title{text-align: center;}
+.title>h1{margin-top: 25vh; text-align: left; font-size: 46px;}
+.title>.line{border-top: 1px solid #fff; margin: 20px 0;}
+.sns{display: flex; margin-bottom: 50px;}
+.sns>li{margin-right: 15px; font-size: 14px;}
+
+@media all and (max-width:1600px){
+  .header{width: 350px;}
+}
+
+@media all and (max-width:1200px){
+  .header{width: 100%; height: 80px; flex-direction: row;}
+  .title>h1{margin-top: 0; font-size: 25px; margin-left: 20px;}
+  .title>h1>br{display: none;}
+  .title>.line, .title>p{display: none;}
+  .sns{margin-bottom: 0;}
+  .sns span{display: none;}
+  .sns i{font-size: 30px;}
+}
+
+.main{background: #efefef; padding-left: 400px; padding-top: 50px; min-height: 100vh;}
+.btns{display: flex; justify-content: flex-end; margin-right: 30px;}
+.btns>li{cursor: pointer; width: 100px; text-align: center; line-height: 26px; font-size: 12px; background-color: #fff; color: #aaa; margin-left: 15px; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);}
+.btns>li.active{background: linear-gradient(45deg,#a8c879,#cbdeaf); color: #fff; letter-spacing: 2px; box-shadow: 0px 3px 15px rgba(151, 207, 165, 0.3);}
+
+.main>section{display: flex; flex-wrap: wrap; padding: 20px 10px;}
+
+.box{width: 19.5%; padding: 10px; box-sizing: border-box;}
+.box>a{display: block; background-color: #fff; padding: 10px; border-radius: 5px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);}
+.box img{width: 100%;}
+.box p:nth-of-type(1){margin: 5px 0;}
+.box p:nth-of-type(2){font-size: 14px; color: #aaa;}
+
+@media all and (max-width:1600px){
+.box{width: 24.5%;}
+}
+@media all and (max-width:1200px){
+.main{padding-left: 0px; padding-top: 100px;}  
+}
+@media all and (max-width:900px){
+.box{width: 31%;}
+}
+@media all and (max-width:680px){
+.btns{justify-content: center;}
+.box{width: 48%;}
+}
+@media all and (max-width:530px){
+.box{width: 98%;}
+}
