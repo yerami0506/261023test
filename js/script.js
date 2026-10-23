@@ -10,3 +10,7 @@ const grid=$(".main>section").isotope({})
 
 Fancybox.bind("[data-fancybox]",{})
 
+if(!sessionStorage.a){
+  sessionStorage.a = 1;
+  setTimeout(() => location.reload())
+}
